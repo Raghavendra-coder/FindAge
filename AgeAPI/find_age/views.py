@@ -26,7 +26,7 @@ class GetAge(APIView):
         if time_interval < 1:
             data = {
                 'status': False,
-                'message': 'you are not born yet'
+                'message': 'data enterred incorrectly or you are not born yet'
             }
             return Response(data)
 
